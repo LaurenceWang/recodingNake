@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@400;600;800&display=swap"
+		rel="stylesheet">
+	<script src="./lib/p5.js"></script>
+	<script src="./lib/p5.sound.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Algorithmic Aesthetics - Laurence Wang & Elia Roard</title>
+</head>
+
+<body>
+
+
+	<script src="./lib/dat.gui.min.js"></script>
+	<script src="./src/recoded.js"></script>
+	<script src="./src/app.js"></script>
+
+
+	<div id="main" class="main">
+		<h1>
+			Recoding Frieder Nake's Walk-Trough-Raster Vancouver
+		</h1>
+
+		<div class="presentation">
+
+			<p>This is a recoding project for our Algorithmic Aesthetics class at IMAC made by Laurence Wang and Elia
+				Roard. <br> This project is based on Frieder Nake's work you can find <a
+					href="https://www.artsy.net/artwork/frieder-nake-walk-through-raster-vancouver-version">here </a>
+			</p>
+
+			<p>
+				This piece is composed of 3 layers of grids in 3 different colors :
+
+				<ul>
+					<li>
+						yellow (first)
+					</li>
+					<li>
+						orange (second)
+					</li>
+					<li>
+						blue (third)
+					</li>
+				</ul>
+			</p>
+
+			<p>
+				The grids are 40 x 40 and are made of squares of 10 x 10. They destructure themselves as they
+				approach the right and bottom side. The orange grid als forms a heap near the bottom left edge and isn't
+				aligned with the rest.
+			</p>
+
+			<p>
+				Frider Nake wrote algorithm that dictated certain parameters of an image but left other variables to be
+				determined at random. That is why for our recoding project, we decided to do the same. <br> We used a
+				Gaussian function and a random number drawned between 0 and 1 to help position the squares of the
+				different layers.
+			</p>
+
+			<p>
+				To extend this project, we have made interactive versions of our code to help you understand the process
+				behind this project better.
+			</p>
+
+			<p>
+				<a href="./custom.html" class="link1">Make your own version</a> <a href="./interactive.html"
+					class="link2">Interactive layers</a>
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

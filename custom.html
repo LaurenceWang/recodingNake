@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <script src="./lib/p5.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Algorithmic Aesthetics - Personalized WTR</title>
+</head>
+
+<body>
+
+
+  <script src="./lib/dat.gui.min.js"></script>
+  <script src="./src/sketch.js"></script>
+  <script src="./src/app.js"></script>
+
+
+  <div id="main" class="main">
+    <h1>Make your own version of Walk Through Raster</h1>
+    <a href="./index.html" class="link2">back</a>
+    <div class="buttons">
+
+      <div>
+        <p class="layerLabel">First Layer </p>
+        <button id="layer0" class="showbtn">Show</button>
+        <button id="layer0" class="hidebtn">Hide</button>
+        <button id="layer0" class="resetbtn">Reset</button>
+        <p>
+          <span class="btnLabel">Top L :
+            <button id="sigma0" class="probabtn addbtn layer0">+</button>
+            <button id="sigma0" class="probabtn subsbtn layer0">-</button>
+          </span>
+          <span class="btnLabel">Top R / Btm L :
+            <button id="sigma1" class="probabtn addbtn layer0">+</button>
+            <button id="sigma1" class="probabtn subsbtn layer0">-</button>
+          </span>
+          <span class="btnLabel">Btm R :
+            <button id="sigma2" class="probabtn addbtn layer0">+</button>
+            <button id="sigma2" class="probabtn subsbtn layer0">-</button>
+          </span>
+        </p>
+      </div>
+
+      <div>
+        <p>Second Layer </p>
+        <button id="layer1" class="showbtn">Show</button>
+        <button id="layer1" class="hidebtn">Hide</button>
+        <button id="layer1" class="resetbtn">Reset</button>
+
+        <p>
+          <span class="btnLabel">Top L :
+            <button id="sigma0" class="probabtn addbtn layer1">+</button>
+            <button id="sigma0" class="probabtn subsbtn layer1">-</button>
+          </span>
+
+          <span class="btnLabel">Top R / Btm L :
+            <button id="sigma1" class="probabtn addbtn layer1">+</button>
+            <button id="sigma1" class="probabtn subsbtn layer1">-</button>
+          </span class="btnLabel">
+          <span>Btm R :
+            <button id="sigma2" class="probabtn addbtn layer1">+</button>
+            <button id="sigma2" class="probabtn subsbtn layer1">-</button>
+          </span>
+        </p>
+      </div>
+
+
+      <div>
+        <p>Third Layer</p>
+        <button id="layer2" class="showbtn">Show</button>
+        <button id="layer2" class="hidebtn">Hide</button>
+        <button id="layer2" class="resetbtn">Reset</button>
+        <p>
+
+          <span class="btnLabel">Top L :
+            <button id="sigma0" class="probabtn addbtn layer2">+</button>
+            <button id="sigma0" class="probabtn subsbtn layer2">-</button>
+          </span>
+          <span class="btnLabel">Top R / Btm L :
+            <button id="sigma1" class="probabtn addbtn layer2">+</button>
+            <button id="sigma1" class="probabtn subsbtn layer2">-</button>
+          </span>
+          <span>Btm R :
+            <button id="sigma2" class="probabtn addbtn layer2">+</button>
+            <button id="sigma2" class="probabtn subsbtn layer2">-</button>
+          </span>
+        </p>
+      </div>
+
+      <div>
+        <button id="download" class="download" onclick="download()">Download</button>
+      </div>
+
+    </div>
+
+
+    <div class="presentation">
+      <p>The algorithm we have coded to recreate Frieder Nake’s Walk Through Raster uses the Gaussian distribution to
+        set the position of the squares. Here, we let you set the coefficients of the function to make different outputs
+        of the layers. For your convenience, it is also possible to hide/show, or reset the layer you are working on</p>
+
+      <p>You can also change the color of the layers and the background, as well as translate the different layers</p>
+
+      <p>Once you are done, you can download your own version of Walk-Trough-Raster. Have fun and be creative !
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+</body>
+
+</html>
